@@ -1,0 +1,157 @@
+.contact {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.contact .nav {
+  position: static;
+  background-color: #03101a;
+}
+
+.contact .intro {
+  background-color: #232836;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.contact .intro h2 {
+  font-size: 20px;
+}
+
+.contact .contact__choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .contact__choice {
+  width: 145px;
+  text-align: center;
+  height: 130px;
+  border: 1px solid #ebebeb;
+  border-radius: 15px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f5f4f3;
+}
+
+.contact .contact__choice--active {
+  background-color: #27ccc3;
+  color: white;
+}
+
+.contact .contact__choice__image {
+  width: 30px;
+}
+
+.contact .form__container {
+  background-color: #f5f4f3;
+  padding: 20px;
+}
+
+.contact .form__input {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .form__input label {
+  color: #232836;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact .form__input input {
+  display: inline-block;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact .form__input textarea {
+  height: 80px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact .form button {
+  text-transform: uppercase;
+  background-color: #2699fb;
+  width: 280px;
+  padding: 20px 0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .contact .nav {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .contact .intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../public/images/contact/contact-banner.jpg");
+    margin: 0 auto;
+    margin-top: 0px;
+    color: white;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    border-radius: 0px;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact .intro p {
+    display: none;
+  }
+
+  .contact .contact__choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    left: -20px;
+  }
+
+  .form {
+    background-color: #f5f4f3;
+    padding: 20px;
+  }
+
+  .form .form__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form .flex-1 {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .contact .form__input textarea {
+    height: 250px;
+  }
+}

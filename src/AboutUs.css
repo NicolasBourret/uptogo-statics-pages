@@ -1,0 +1,117 @@
+.about {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about .banner__background {
+  background-image: url("../public/images/about_us/founder-banner.jpg");
+  min-height: 200px;
+  width: 100%;
+  background-position: right;
+  background-size: cover;
+}
+
+.about .engagement {
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.about .engagement__header {
+  display: flex;
+}
+
+.about .engagement__logo {
+  display: block;
+  width: 46px;
+  height: 53px;
+}
+
+.about .engagement__title {
+  color: #b61830;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.founders {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../public/images/about_us/lambo-banner.jpg");
+  background-size: cover;
+  background-position: right;
+  color: white;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #181818;
+  color: #e7e7e7;
+}
+
+.footer .footer__main-logo {
+  width: 170px;
+}
+
+.footer .footer__social-icons {
+  display: flex;
+}
+
+.footer .footer__social-icon {
+  margin-right: 20px;
+}
+
+.footer .footer__logos {
+  display: flex;
+}
+
+.footer .footer__logo {
+  width: 73px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .about .nav {
+    z-index: 1;
+  }
+
+  .about .banner__background {
+    height: 600px;
+    background-position: center;
+  }
+
+  .about .intro {
+    position: absolute;
+    color: white;
+    width: 50%;
+    top: 300px;
+  }
+
+  .large-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first-column {
+    width: 256px;
+  }
+
+  .footer h3 {
+    position: relative;
+  }
+
+  .footer h3::before {
+    display: block;
+    content: "";
+    height: 18px;
+    width: 5px;
+    background-color: #de083c;
+    position: absolute;
+    bottom: 3px;
+    left: -15px;
+  }
+}

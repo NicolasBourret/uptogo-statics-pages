@@ -2,6 +2,10 @@ img {
   width: 100%;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .padding-h-2 {
   padding: 0 20px;
 }
@@ -23,18 +27,29 @@ img {
   text-transform: uppercase;
 }
 
+.halfwidth {
+  width: 50%;
+}
+
 .App {
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .nav {
-  display: flex;
-  justify-content: space-between;
   position: absolute;
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
+}
+
+.nav .nav--flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav .nav__link {

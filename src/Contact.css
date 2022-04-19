@@ -1,7 +1,5 @@
 .contact {
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
   overflow-x: hidden;
 }
 
@@ -11,7 +9,6 @@
 }
 
 .contact .intro {
-  background-color: #232836;
   margin: 0 auto;
   margin-top: 40px;
   color: white;
@@ -23,9 +20,10 @@
 
 .contact .intro h2 {
   font-size: 20px;
+  width: 100%;
 }
 
-.contact .contact__choices {
+.contact .contact__choices--flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -105,9 +103,14 @@
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .contact .intro {
+  .contact .intro--background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("../public/images/contact/contact-banner.jpg");
+    background-size: cover;
+    background-position: right;
+  }
+
+  .contact .intro {
     margin: 0 auto;
     margin-top: 0px;
     color: white;
@@ -115,11 +118,10 @@
     height: 600px;
     padding: 20px;
     border-radius: 0px;
-    background-size: cover;
-    background-position: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1200px;
   }
 
   .contact .intro p {
@@ -127,13 +129,16 @@
   }
 
   .contact .contact__choices {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     position: absolute;
     width: 100%;
     top: 400px;
     left: -20px;
+  }
+
+  .contact .contact__choices--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form {

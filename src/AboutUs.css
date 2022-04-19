@@ -1,7 +1,5 @@
 .about {
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .about .banner__background {
@@ -43,8 +41,6 @@
 }
 
 .footer {
-  max-width: 1200px;
-  margin: 0 auto;
   background-color: #181818;
   color: #e7e7e7;
 }
@@ -87,13 +83,18 @@
   .about .intro {
     position: absolute;
     color: white;
-    width: 50%;
+    width: 100%;
     top: 300px;
   }
 
   .large-flex {
     display: flex;
     justify-content: space-between;
+  }
+
+  .flex-left {
+    display: flex;
+    justify-content: start;
   }
 
   .first-column {
